@@ -7,7 +7,7 @@ with open("fivewords.txt",'r') as f:
 #a = f.find(',' + ',')
 #print(a)
 
-guess = random.randrange(0,5719)
+guess = random.randrange(0,5718)
 print(guess)
 
 
@@ -19,7 +19,7 @@ print(cat)
 
 First_Attempt = input("00000\n")
 #Green
-'''for i in range(5):
+for i in range(5):
     if First_Attempt[i] == cat[i]:
         print("\033[1;32;20m Bright Green  \n")
     #In cont. Yellow
@@ -32,7 +32,7 @@ First_Attempt = input("00000\n")
 
 #gray
     else:
-        print("\033[1;30;20m Dark Gray  \n")'''
+        print("\033[1;30;20m Dark Gray  \n")
 
 #elif First_attempt[]
 
@@ -47,13 +47,30 @@ for i in range (len(cat)):
     else:
         Dictionary[cat[i]] = 1
 
+for i in range(len(cat)):
+    if cat[i] in Dictionary and Dictionary[cat[i]] >= cat.count(cat[i]):
+        print ("i made it in")
+        if First_Attempt[i] == cat[i]:
+            print("\033[1;32;20m Bright Green  \n")
+        elif:
+            cat[i] in Dictionary and Dictionary[cat[i]] >= cat.count(cat[i]):
+                print("\033[95m {}\033[00m".format(skk))
+        else:
+            print("\033[1;30;20m Dark Gray  \n")
+
+
+
+
+
+
 print(Dictionary)
 #ictionary[cat]
 
 
 
 #Color code
-#print("\033[1;32;40m Bright Green  \n")
+#print("\033[1;32;40m Bright Green
+
 
 
 
